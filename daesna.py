@@ -9,9 +9,7 @@ Python 3.7.2
 """
 
 from textwrap import wrap
-
-# Global Variables
-MAX_TEXT_WIDTH = 40
+from os import system, name
 
 # Just a function to standardize our blocks of descriptive text
 def decision_text(text):
@@ -24,7 +22,6 @@ def decision_text(text):
 # Citation for the below function:
 # https://stackoverflow.com/questions/2084508/clear-terminal-in-python
 def clear_screen():
-	from os import system, name
 	system('cls' if name == 'nt' else 'clear')
 
 # A function for checking input again a provided list of actions
